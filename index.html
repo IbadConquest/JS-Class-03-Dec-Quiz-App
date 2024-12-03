@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Class 03 Dec Quiz app</title>
+</head>
+<body>
+    <h1>question</h1>
+    <h2>Option</h2>
+    <ul >
+        <li style="list-style: none;">
+            
+        </li>
+    </ul>
+
+
+
+    <script>
+        var question = [
+            {
+                question:"what is the capital of france?",
+                option:["berlin","madrid","Paris","Lisbon"],
+                answer: 2
+            },
+            {
+                question:"What is 2 + 2?",
+                option:["2","3","4","44"],
+                answer: 0
+            },
+            {
+                question:"What is the largest ocean in the world?",
+                option:["Pacific","Atlentic","indian","Arabian"],
+                answer: 0
+            },
+        ];
+
+        var score = 0;
+
+        for(var i = 0 ; i < question.length ; i++){
+            var userAnswer = prompt(question[i].question + "\n" + question[i].option.join("\n"));
+
+            if (parseInt(userAnswer) === question[i].answer){
+                score++;
+            }
+        }
+
+            alert("your score is: " + score +"/" + question.lenght);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // var a = prompt("hi user user put your name here")
+        // alert("Name")
+        // document.write(a)
+    </script>
+</body>
+</html>
